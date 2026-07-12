@@ -47,8 +47,10 @@ lib/
 │   ├── progress_page.dart
 │   └── api_history_page.dart
 └── main.dart
+```
+
 ---
 
-## 📌 Catatan
+## Catatan
 
 Project ini dibuat untuk memenuhi tugas Ujian Akhir Semester (UAS) mata kuliah Mobile Programming dan dapat dikembangkan lebih lanjut menjadi aplikasi production-ready.
