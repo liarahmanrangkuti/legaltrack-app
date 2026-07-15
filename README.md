@@ -18,6 +18,14 @@ Aplikasi ini merupakan pengembangan dari desain UI/UX LegalTrack pada Ujian Teng
 - Upload dokumen menggunakan Camera/Image Picker
 - Logout pengguna
 - State management menggunakan Provider
+## Teknologi yang Digunakan
+
+- Flutter
+- Provider
+- HTTP
+- SharedPreferences
+- Image Picker
+- Material Design
 
 ## Alur Aplikasi
 
@@ -49,8 +57,71 @@ lib/
 └── main.dart
 ```
 
----
+## Implementasi Fitur Flutter
 
-## Catatan
+### 1. State Management (Provider)
 
-Project ini dibuat untuk memenuhi tugas Ujian Akhir Semester (UAS) mata kuliah Mobile Programming dan dapat dikembangkan lebih lanjut menjadi aplikasi production-ready.
+Aplikasi menggunakan Provider dan ChangeNotifier melalui AppController untuk mengelola state aplikasi seperti:
+
+- Login pengguna
+- Status loading
+- Data progress legalitas
+- Upload dokumen
+
+Implementasi:
+- ChangeNotifier
+- ChangeNotifierProvider
+- Consumer
+- context.watch()
+- context.read()
+
+### 2. API Integration
+
+Aplikasi menggunakan package HTTP untuk mengambil data legalitas dari REST API.
+
+Endpoint simulasi:
+
+`https://jsonplaceholder.typicode.com/users`
+
+Implementasi:
+- HTTP GET Request
+- JSON Parsing
+- Menampilkan data legalitas pada halaman History
+- Menggunakan package `http`
+
+### 3. Local Storage
+
+Aplikasi menggunakan SharedPreferences untuk menyimpan:
+
+- Status login
+- Email pengguna
+
+Sehingga pengguna tetap login saat aplikasi dibuka kembali.
+Implementasi menggunakan package `shared_preferences`.
+
+### 4. Mobile Features
+
+Aplikasi menggunakan Image Picker untuk mengunggah dokumen legalitas.
+
+Implementasi:
+- Ambil foto dokumen
+- Pilih gambar dari perangkat
+- Menampilkan nama file yang berhasil dipilih
+- Menggunakan package `image_picker`
+
+## Screenshot Implementasi
+
+### Login
+![Login](screenshots/01-login.png)
+
+### Home
+![Home](screenshots/02-home.png)
+
+### Progress Legalitas
+![Progress](screenshots/03-detail-progress.png)
+
+### API History
+![API](screenshots/04-history-api.png)
+
+### Upload Dokumen
+![Upload](screenshots/05-upload-docs.png)hir Semester (UAS) mata kuliah Mobile Programming dan dapat dikembangkan lebih lanjut menjadi aplikasi production-ready.
