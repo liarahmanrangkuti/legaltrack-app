@@ -124,4 +124,4 @@ Implementasi:
 ![API](screenshots/04-history-api.png)
 
 ### Upload Dokumen
-![Upload](screenshots/05-upload-docs.png)hir Semester (UAS) mata kuliah Mobile Programming dan dapat dikembangkan lebih lanjut menjadi aplikasi production-ready.
+![Upload](screenshots/05-upload-docs.png)
